@@ -69,6 +69,10 @@ android_app {
         proguard_flags_files: ["proguard-rules.pro"],
         shrink_resources: true,
     },
+
+    aaptflags: [
+        "--rename-manifest-package", "com.android.camera",
+    ],
 }
 
 prebuilt_etc {
@@ -76,7 +80,8 @@ prebuilt_etc {
     product_specific: true,
     sub_dir: "sysconfig",
     src: "initial-package-stopped-states-org.lineageos.aperture.xml",
-    filename_from_src: true,
+    filename: "ipss_org.los.aperture.xml",
+    //filename_from_src: true,
 }
 
 prebuilt_etc {
@@ -84,5 +89,6 @@ prebuilt_etc {
     product_specific: true,
     sub_dir: "sysconfig",
     src: "preinstalled-packages-org.lineageos.aperture.xml",
-    filename_from_src: true,
+    filename: "pp_org.los.aperture.xml",
+    //filename_from_src: true,
 }
