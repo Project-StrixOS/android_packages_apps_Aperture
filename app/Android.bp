@@ -90,5 +90,4 @@ prebuilt_etc {
     sub_dir: "sysconfig",
     src: "preinstalled-packages-org.lineageos.aperture.xml",
     filename: "pp_org.los.aperture.xml",
-    //filename_from_src: true,
 }
